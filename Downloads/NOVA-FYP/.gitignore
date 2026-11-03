@@ -1,0 +1,32 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+# Local data, outputs and trained models
+.env
+*.pt
+*.onnx
+*.tflite
+*.mp4
+*.avi
+*.jpg
+*.jpeg
+*.png
+!docs/assets/.gitkeep
+/data/raw/
+/data/processed/
+/experiments/results/
+# Android
+.gradle/
+**/build/
+local.properties
+*.keystore
+*.jks
+# Hardware
+.pio/

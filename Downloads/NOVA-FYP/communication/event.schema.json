@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NOVA sensor event (draft)",
+  "type": "object",
+  "required": ["timestamp_ms", "source", "event_type"],
+  "properties": {
+    "timestamp_ms": {"type": "integer", "minimum": 0},
+    "source": {"enum": ["camera", "cane", "app"]},
+    "event_type": {"type": "string"},
+    "distance_m": {"type": ["number", "null"], "minimum": 0},
+    "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "direction": {"enum": ["left", "center", "right", "unknown"]}
+  },
+  "additionalProperties": true
+}
